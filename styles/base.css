@@ -1,0 +1,154 @@
+/* base.css */
+/* Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0d47a1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #083c84;
+}
+
+#course-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1a73e8;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-card {
+    grid-column: 1 / 2;
+}
+
+.resources-card {
+    grid-column: 2 / 3;
+}
+
+h2 {
+    color: #0d47a1;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.about-me-card .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #0d47a1;
+    flex-shrink: 0;
+}
+
+.location-section {
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: #0d47a1;
+}
+
+.location-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.flag-container {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.flag-img {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.flag-caption {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.resources-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-card li {
+    margin-bottom: 10px;
+}
+
+.resources-card a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resources-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0d47a1;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 5px solid #083c84;
+}
+
+footer p {
+    margin: 0;
+}
