@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimbabwe</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Zimbabwe</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/elephants.webp" media="(max-width: 600px)">
+                <img src="images/elephants.webp" alt="Elephants in Zimbabwe" class="hero-image">
+            </picture>
+            <div class="container info-grid">
+                <div class="card data-card">
+                    <h2>Data</h2>
+                    <div class="data-list">
+                        <p><strong>Area:</strong> 390,757 sq km</p>
+                        <p><strong>Population:</strong> 16,320,537</p>
+                        <p><strong>Capital:</strong> Harare</p>
+                        <p><strong>Languages:</strong> Shona, Ndebele, English</p>
+                        <p><strong>Currency:</strong> Zimbabwe Gold (ZiG)</p>
+                        <p><strong>Time Zone:</strong> UTC+2</p>
+                        <p><strong>Calling Code:</strong> +263</p>
+                        <p><strong>Internet TLD:</strong> .zw</p>
+                    </div>
+                </div>
+    
+                <div class="card weather-card">
+                    <h2>Weather <span class="weather-icon-wider"></span></h2>
+                    <img src="images/weather-icon.svg" alt="Cloud and sun icon" class="weather-icon-mobile">
+                    <div class="weather-list">
+                        <p><strong>Temperature:</strong> 25 °C</p>
+                        <p><strong>Conditions:</strong> Sunny</p>
+                        <p><strong>Wind:</strong> 2 km/h</p>
+                        <p><strong>Wind Chill:</strong> <span id="windchill-value"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ☀️ Pastor Munashe Zimondi ☀️ Zimbabwe</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
