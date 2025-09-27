@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+
+  #navLinks {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 5px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
