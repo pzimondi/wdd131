@@ -1,0 +1,49 @@
+/* Base body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5DC; /* Secondary color */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3CB371; /* Primary color */
+    margin-top: 20px;
+}
+
+/* Header & Footer */
+header, footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3CB371; /* Primary color */
+    color: white;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+/* Links styling */
+a {
+    color: #3CB371;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
