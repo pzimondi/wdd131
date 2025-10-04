@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <main>
+    <h1>Thank You for Your Review!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <p id="reviewCounter"></p>
+    <a href="form.html">Submit another review</a>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span>  ⭐️ Pastor Munashe Zimondi ⭐️ Zimbabwe</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    // Counter using localStorage
+    let count = localStorage.getItem("reviewCount");
+    count = count ? parseInt(count) + 1 : 1;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCounter").textContent = `Total reviews submitted: ${count}`;
+  </script>
+</body>
+</html>
